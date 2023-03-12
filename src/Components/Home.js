@@ -1,7 +1,12 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate= useNavigate();
+  function handlesubmit(e){
+    navigate("/");
+  }
   return (
     <div>
       <h1>Home Page</h1>
@@ -16,6 +21,9 @@ const Home = () => {
           <Link to="/parties">PARTIES AND EXPECTATIONS</Link>
         </li>
       </ul>
+
+      <button onClick={handlesubmit}>Log Out</button>
+      
     </div>
   )
 }

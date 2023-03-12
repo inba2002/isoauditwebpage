@@ -7,7 +7,7 @@ function Parties() {
 
   function handleClick(e) {
 
-    navigate("/");
+    navigate("/home");
   }
 
     const [tableData, setTableData] = useState([

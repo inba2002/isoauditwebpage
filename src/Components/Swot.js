@@ -79,7 +79,7 @@ const Swot = () => {
       const handleSubmit = (e) => {
         e.preventDefault();
         console.log(data1);
-        navigate("/");
+        navigate("/home");
       };
     
 
