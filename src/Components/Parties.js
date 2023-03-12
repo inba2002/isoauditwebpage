@@ -15,7 +15,7 @@ function Parties() {
         { id: 2, name: 'PARENTS', ne: '',resp:'',soi:'',ro:'' },
         { id: 3, name: 'EMPLOYEES', ne: '',resp:'',soi:'',ro:'' },
         {id: 4, name: 'MANAGEMENT', ne: '',resp:'',soi:'',ro:''},
-        {id: 5, name: 'Supplier and Service Provider ', ne: '',resp:'',soi:'',ro:''}
+        {id: 5, name: 'SUPPLIER AND SERVICE PROVIDER', ne: '',resp:'',soi:'',ro:''}
       ]);
       const handleCellEdit = (event, rowIndex, field) => {
         const newData = [...tableData];
@@ -23,9 +23,21 @@ function Parties() {
         setTableData(newData);
       };
     return (
-        <div >
-        <table className='table-fixed shadow-md sm:rounded-lg mt-28 ml-20 mr-20 mb-16'>
-        <thead className='text-base text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
+        <div className="mt-16 h-screen flex flex-col items-center space-y-[25px]">
+           <h1 className="text-3xl font-medium mb-4 ">List of Interested Parties and Expectations (Entry by Institute Head & Coordinator)</h1>
+      <div className="grid grid-cols-2 gap-5">
+      <div className="grid grid-cols-2">
+        <h2 className="text-xl font-medium mb-2">Organization Name:</h2>
+        <input type="text" id="orgname" name="organizationname" className="border border-gray-400 p-1 rounded-md" />
+      </div>
+      <div className="grid grid-cols-2">
+        <h2 className="text-xl font-medium mb-2">Date:</h2>
+        <input type="text" id="date" name="date" className="border border-gray-400 p-1 rounded-md" />
+      </div>
+      </div>
+
+        <table className='table-fixed shadow-md sm:rounded-lg mt-28 ml-20 mr-20 mb-20'>
+        <thead className='text-base text-black uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
           <tr>
             <th className='px-10 py-3 '>S.NO</th>
             <th className='px-10 py-3'>INTERESTED PARTIES</th>
@@ -74,7 +86,7 @@ function Parties() {
           ))}
         </tbody>
       </table>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center mt-10">
       <button onClick={handleClick} className="bg-blue-500 hover:bg-blue-700 text-white text-xl font-bold py-2 px-4 rounded-full">
             Submit
         </button>
