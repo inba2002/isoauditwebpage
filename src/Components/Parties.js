@@ -5,11 +5,8 @@ function Parties() {
 
   const navigate = useNavigate();
 
-  function handleClick(e) {
-
-    navigate("/home");
-  }
-
+  var date=new Date();
+  var currentdate=date.getDate()+'-'+(date.getMonth()+1)+'-'+date.getFullYear();
     const [tableData, setTableData] = useState([
         { id: 1, name: 'STUDENTS', ne: '',resp:'' ,soi:'',ro:''},
         { id: 2, name: 'PARENTS', ne: '',resp:'',soi:'',ro:'' },
@@ -32,7 +29,7 @@ function Parties() {
       </div>
       <div className="grid grid-cols-2">
         <h2 className="text-xl font-medium mb-2">Date:</h2>
-        <input type="text" id="date" name="date" className="border border-gray-400 p-1 rounded-md" />
+        <h2 className='text-xl font-regular mb-2'>{currentdate}</h2>
       </div>
       </div>
 
@@ -87,7 +84,7 @@ function Parties() {
         </tbody>
       </table>
       <div className="flex items-center justify-center mt-10">
-      <button onClick={handleClick} className="bg-blue-500 hover:bg-blue-700 text-white text-xl font-bold py-2 px-4 rounded-full">
+      <button className="bg-blue-500 hover:bg-blue-700 text-white text-xl font-bold py-2 px-4 rounded-full">
             Submit
         </button>
         </div>

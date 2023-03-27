@@ -9,12 +9,14 @@ import {
     Route,
     Navigate,
   } from "react-router-dom";
+import Navbar from './Components/Navbar';
 
 
 function App() {
     
     return (
        <>
+                <Navbar/>
                 <Routes>
                 <Route path="/" element={<LoginPage/>} />
                 <Route path='home' element={<Home/>}/>
