@@ -14,11 +14,6 @@ function LoginPage() {
 
         <section>
 
-            <div className='w-20 ml-44 mt-4'>
-                <img src={Logo} alt=""/>
-                <h6 className='text-[14px] text-[#0cbaba] font-bold  mt-2 ml-3'>ISO Audit</h6>
-            </div>
-
         <section className='bg-white mt-28  flex items-center justify-center'>
 
             <div className='bg-white flex rounded-2xl max-w-6xl py-8 px-5 items-center'>
