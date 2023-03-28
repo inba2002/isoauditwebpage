@@ -20,8 +20,8 @@ function Parties() {
         setTableData(newData);
       };
     return (
-        <div className="mt-16 h-screen flex flex-col items-center space-y-[25px]">
-           <h1 className="text-3xl font-medium mb-4 ">List of Interested Parties and Expectations (Entry by Institute Head & Coordinator)</h1>
+        <div className="bg-gradient-to-b from-[#A8FFF8] to-[#A8D7FF] h-screen flex flex-col items-center space-y-[25px]">
+           <h1 className="text-3xl font-medium mt-10 mb-4 ">List of Interested Parties and Expectations (Entry by Institute Head & Coordinator)</h1>
       <div className="grid grid-cols-2 gap-5">
       <div className="grid grid-cols-2">
         <h2 className="text-xl font-medium mb-2">Organization Name:</h2>

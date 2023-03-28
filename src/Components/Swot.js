@@ -81,9 +81,10 @@ const Swot = () => {
 
 
   return (
-    <div className="mt-10 h-screen flex flex-col items-center space-y-[10px]">
-      <h1 className="text-3xl font-medium">SWOT QUESTIONNAIRE</h1>
-      <div className="flex items-center justify-center py-3">
+
+    <div className="bg-gradient-to-b from-[#A8FFF8] to-[#A8D7FF] h-screen flex flex-col items-center space-y-[10px]" >
+      <h1 className="text-3xl mt-10 font-medium">SWOT QUESTIONNAIRE</h1>
+      <div className="flex items-center justify-center py-2">
       <h2 className="text-2xl font-medium pr-2">Academic Year:</h2>
       <h2 className="text-2xl font-medium">2022-2023</h2>
       </div>
@@ -144,7 +145,7 @@ const Swot = () => {
           />
         </div>
       </div>
-
+      <div className="grid grid-cols-2 gap-96">
       <button
       className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-10 rounded"
       onClick={()=>{
@@ -162,13 +163,18 @@ const Swot = () => {
         }
       }}
     >Next</button>
-
+      </div>
+      <div className='mt-6 mb-5'>
       <button
-      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-10 rounded"
+      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
       onClick={handleSubmit}
     >
       Submit
     </button>
+      </div>
+      
+
+      
 
       </div>
   )
